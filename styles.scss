@@ -1,0 +1,76 @@
+$primary_color: blue;
+$secondary_color: #f1f1f1;
+$mini_color: #ddd;
+$maxi_color: dodgerblue;
+$tert_color: #4CAF50;
+// $regi_color: coral;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;  
+}
+
+.box-model {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid $primary_color;
+}
+
+.container {
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type="text"], 
+input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: $secondary_color;
+    transition: ease-in-out .35s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: $mini_color;
+    outline: none;
+    width: 250px;
+}
+
+hr{
+    border: 1px solid $secondary_color;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    box-sizing: border-box;
+    background-color: $tert_color;
+    color: $secondary_color;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+// .registerbtn:hover {
+//     opacity: 1;
+//     width: 250px;
+//     background: $regi_color;
+// }
+
+a {
+    color: $maxi_color;
+}
+
+signin {
+    background-color: $secondary_color;
+    text-align: center;
+}
